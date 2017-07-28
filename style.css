@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/*Main div encompasses the two other divs; the side-nav and the main. 
+	display with value flex allows for the side-by-side layout. Height with value 100vh,
+	sets the view to the full height of the screen. */
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+/*Side-nav bears the table of content of the webpage. 
+Contents are fixed for easy scrolling of the main div.*/
+#side-nav {
+    width: 25%;
+    background-color: orange;
+    padding: 40px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/*the div with id main bears the content of the webpage. The property,"overflow" with value "auto:; allows for scrolling of content. 
+*/
+#main {
+    width: 75%;
+    padding: 40px;
+    overflow: auto;
+}
+
+section#post {
+    opacity: 0.2px;
+    padding: 10px;
+}
+
+div#post-header h1 {
+	the "text-transform property
+    text-align: center;
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.post-content {
+    text-align: justify;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+h2.subtitle {
+    font-family: 'Bubbler One', sans-serif;
+}
+
+pre {
+    background-color: #272822;
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 14px;
+}
+
+span.html-tag {
+    color: #f92672;
+}
+
+div#table-of-contents ul li a {
+    text-decoration: none;
+}
+
+div#table-of-contents ul li {
+    list-style: none;
+}
+
+div#table-of-contents ul {
+    padding: 0;
+}
+
+div#table-of-contents {
+    line-height: 40px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/*uniquely highlights keywords in the body*/
+.highlight {
+    color: #bf616a;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 85%;
+}

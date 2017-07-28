@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IPND Notes for HTML </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Pompiere|Roboto+Condensed:300|Alegreya+Sans" rel="stylesheet">
+</head>
+<!Beginning of work >
+
+<body>
+    <div id="container"> <!-- this div with id container contains all the divs on the webpage -->
+        <div id="side-nav"><!-- this div is the side-nav encompassing the table of contents, title of the table  of the webpage. elemnts in the table of contents are linked to that on the web page. -->
+
+            <div id="menu-title"> <!-- This div with id, menu-title is only for the HTML title -->
+                <h1>HTML</h1>
+            </div>
+
+            <div id="table-of-contents">
+                <h2 id="content">Content</h2>
+                <ul>
+                    <li> <a href="#pc-1">The world wide web</a></li>
+                    <li><a href="#pc-2"> HTML Elements</a></li>
+                    <li><a href="#pc-3">Exceptions</a></li>
+                    <li><a href="#pc-4">HTML attributes</a></li>
+                    <li><a href="#pc-5">HTML structure</a></li>
+                    <li><a href="#pc-6">Examples of HTML Elements</a></li>
+                    <li><a href="#pc-7">Container Elements</a></li>
+                </ul>
+            </div>
+
+        </div>
+         
+
+        <!-- Main content for web page -->
+        <div id="main">
+            <section id="post">
+                <div id="post-header">
+                    <h1>Getting Started with HTML</h1>
+                </div>
+                <div id="pc-1" class="post-content">
+                    <h2 class="subtitle">The World Wide Web</h2>
+                    <p> The World Wide Web is the largest network of computers. It consists of a <code class="highlight">computer</code> and a <code class="highlight">browser</code>(both are referred to as the <em>client</em>), the <code class="highlight">cloud</code>(<em>Internet</em>)
+                        and the <code class="highlight">server</code>. Communication between the client and the server takes the <code class="highlight">Hypertext Transfer Protocol(HTTP)</code>. A request for a document is placed to the server using the
+                        browser. Interraction is done through HTTP and the request gets delivered to the server using the internet. The requested file(s), an HTML document is sent back to the client, through the internet and rendered using the bowser.
+                        The document for the World Wide Web is the <code class="highlight">HyperText Markup language(HTML)</code>. Other files such as images, audio, videos, pdf etc can be transferred over the internet.</p>
+                </div>
+                <div id="pc-2" class="post-content">
+                    <h2 class="subtitle">HTML Elements </h2>
+                    <p>eg.<code class="highlight">&lt;p&gt;</code> This is fun <code class="highlight">&lt;/p&gt;</code></p>
+                    <p>An HTML element consists of:</p>
+                    <ul>
+                        <li> An opening tag</li>
+                        <li>A content</li>
+                        <li>A closing tag</li>
+                    </ul>
+                    <p> From the example above, <code class="highlight">&lt;p&gt;</code> is an <code class="highlight">opening tag</code>, "This is fun" is the content and <code class="highlight">&lt;/p&gt;</code> is the <code class="highlight">closing tag</code>.</p>
+                </div>
+                <div id="pc-3" class="post-content">
+                    <h3> Exceptions</h3>
+                    <p> There are a group of elements called the <code class="highlight">void elements</code>. These elements do not follow the earlier rule of the composition of an element. They do have opening tags but no closing tags. An example is the
+                        <code class="highlight">&lt;img&gt;, &lt;br&gt;</code> tags.</p>
+                </div>
+                <div id="pc-4" class="post-content">
+                    <h3>HTML Attributes</h3>
+                    <p> Again, for some elements such as <code class="highlight">&lt;img src = "URL"&gt;</code> it has an attribute<em> "src" </em>with its value as the<em>" URL"</em> of the image which is to be added to the HTML document. Another example
+                        is the anchor tag <a href="URL">link</a>. The <em> "href"</em> attribute has a value of "URL". When the HTML document is rendered in the browser, when the pointer hovers over <em> "link" </em>, it shows its a clickable link.</p>
+                </div>
+                <div id="pc-5" class="post-content">
+                    <h3>HTML Structure</h3>
+                    <p>The structure of HTML is tree like. It is written as follows</p>
+                    <pre>
+               <code>
+&lt;!<span class="html-tag">DOCTYPE</span> html&gt;
+&lt;<span class="html-tag">html</span>&gt;
+&lt;<span class="html-tag">head</span>&gt;
+   &lt;<span class="html-tag">title</span>&gt; document title &lt;/<span class="html-tag">title</span>&gt;
+&lt;/<span class="html-tag">head</span>&gt;
+&lt;<span class="html-tag">body</span>&gt;
+       content goes here
+&lt;/<span class="html-tag">body</span>&gt;
+&lt;/<span class="html-tag">html</span>&gt;
+               </code>
+               </pre>
+                </div>
+                <div id="pc-6" class="post-content">
+                    <h3>Examples of HTML Elements</h3>
+                    <p><code class="highlight">&lt;p&gt;</code> : the <code class="highlight">&lt;p&gt;</code>( used &lt;p&gt; Content&lt;p&gt;) element is a Block element that defines a paragraph. Texts in the tag are contained in an invisible box with
+                        defined width and height.</p>
+                    <p><code class="highlight">&lt;br&gt;</code>: Unlike &lt;p&gt;, &lt;br&gt; is an inline element. It creates a line break at the point of insertion.</p>
+                </div>
+                <div id="pc-7" class="post-content">
+                    <h4>Container Elements</h4>
+                    <p><code class="highlight">&lt;span&gt; content&lt;span&gt; and &lt;div&gt;content&lt;div&gt;</code> are container elements. The difference being that &lt;span&gt; is an inline element and &lt;div&gt; is a block element. They both facilitate
+                        the addition of Cascading Style Sheet to an element(s).</p>
+                </div>
+
+         </section>
+            
+        </div>
+    </div>
+</body>
+
+</html>
